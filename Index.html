@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Humanitarian Youth</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #1a0000, #000);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Splash animation */
+.splash {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeOut 2s ease forwards;
+  animation-delay: 1.8s;
+}
+
+.splash img {
+  width: 140px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.08);}
+  100% {transform: scale(1);}
+}
+
+@keyframes fadeOut {
+  to {opacity: 0; visibility: hidden;}
+}
+
+/* Main container */
+.container {
+  padding: 30px 20px;
+  opacity: 0;
+  animation: show 1s ease forwards;
+  animation-delay: 2s;
+}
+
+@keyframes show {
+  to {opacity: 1;}
+}
+
+/* Logo */
+.logo-img {
+  width: 150px;
+  margin-bottom: 15px;
+  animation: zoomFade 1.2s ease;
+}
+
+@keyframes zoomFade {
+  from {opacity: 0; transform: scale(0.8);}
+  to {opacity: 1; transform: scale(1);}
+}
+
+/* Text */
+.logo-text {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.slogan {
+  font-size: 13px;
+  color: #ccc;
+  margin: 15px 0 25px;
+}
+
+/* Buttons */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px auto;
+  padding: 12px;
+  width: 90%;
+  max-width: 320px;
+  background: rgba(255, 0, 0, 0.15);
+  border: 1px solid rgba(255,0,0,0.3);
+  backdrop-filter: blur(10px);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: rgba(255, 0, 0, 0.3);
+  transform: scale(1.03);
+}
+
+/* Footer */
+.footer {
+  margin-top: 25px;
+  font-size: 11px;
+  color: #777;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Splash screen -->
+<div class="splash">
+  <img src="logo.png">
+</div>
+
+<!-- Main content -->
+<div class="container">
+
+<img src="logo.png" class="logo-img">
+
+<div class="logo-text">
+Humanitarian Youth - মানবিক তারুণ্য
+</div>
+
+<div class="slogan">
+ভ্রাতৃত্বের বন্ধনে, মানবতার কল্যাণে।<br>
+In the bond of brotherhood, for the welfare of humanity.
+</div>
+
+<a class="btn" href="https://www.facebook.com/groups/Human.Youth/">🌐 Facebook Group</a>
+<a class="btn" href="https://www.facebook.com/groups/humanitarian.youth/">🩸 Blood Group</a>
+<a class="btn" href="https://whatsapp.com/channel/0029VaKKG6ACXC3Er7Bea735">💬 WhatsApp Channel</a>
+<a class="btn" href="https://t.me/HumanitarianYouth">✈️ Telegram Channel</a>
+
+<div class="footer">
+© Humanitarian Youth
+</div>
+
+</div>
+
+</body>
+</html>
